@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Pig Game</title>
   </head>
-  <body>
+  <body onload="init();"> 
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
@@ -24,6 +24,14 @@
           <p class="current-label">Current</p>
           <p class="current-score" id="current--1">0</p>
         </div>
+      </section>
+
+      <section class="target">
+        <form onsubmit="return false;">
+          <label for="targetValue" id="targetLabel">Winning Score:</label><br />
+          <input type="number" id="targetValue" name="targetValue">
+          <input type="submit" value="SET" class="btn" id="targetButton">
+        </form>
       </section>
 
       <img src="dice-5.png" alt="Playing dice" class="dice" />

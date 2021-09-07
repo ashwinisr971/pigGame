@@ -165,3 +165,32 @@ main {
   font-weight: 700;
   color: #c7365f;
 }
+
+
+.target{
+  position: absolute;
+  margin-top: 1rem;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: 700;
+  font-size: large;
+  color: #c7365f;
+}
+
+#targetValue{
+  padding: .7em;
+  outline: none;
+  border-radius: 500px;
+  border: 1px solid #c7365f;
+}
+
+.target .btn{
+  top:110%
+}
+
+.target .btn:hover{
+  background-color: #c7365f;
+  color: #fff;
+}
