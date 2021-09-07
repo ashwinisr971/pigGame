@@ -186,6 +186,13 @@ main {
   border: 1px solid #c7365f;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 .target .btn{
   top:110%
 }
